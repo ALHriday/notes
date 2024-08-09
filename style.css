@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.notes-main{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #038399;
+    color: white;
+}
+.heading{
+    text-align: center;
+    font-size: 45px;
+    padding: 10px 0;
+    background-color: rgb(3, 76, 110);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.103);
+}
+.new-note{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom:  1px solid white;
+    padding:  7px 5px;
+    color: rgba(255, 255, 255, 0.938);
+    background-color: hsla(41, 98%, 49%, 0.932);
+}
+.new-note h2{
+   font-size: 26px;
+}
+.btn{
+    background-color: rgb(90, 62, 2);
+    padding: 5px 14px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.note-list{
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 5px;
+}
+.note-list textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 50px;
+    outline: none;
+    padding: 5px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+}
+.saveBtn{
+    padding: 7px 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: orange;
+    margin-bottom: 5px;
+}
+.note-output{
+    display: flex;
+    flex-direction: column;
+}
+.note-item{
+    border-bottom: 1px solid rgba(253, 253, 253, 0.699);
+    background-color: rgba(9, 115, 202, 0.363);
+}
+.note-text{
+    background-color: rgb(6, 81, 104);
+    padding: 5px;
+}
+.list-des, .btn-parent{
+    padding: 5px;
+}
+.btn-parent{
+    width: 60px;
+    text-align: right;
+    float: right;
+}
+.delBtn{
+    width: 100%;
+    padding: 3px;
+    background-color: rgb(252, 37, 37);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.footer{
+    padding: 30px;
+    background-color: rgb(3, 76, 110);
+}
