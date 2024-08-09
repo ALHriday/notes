@@ -51,11 +51,13 @@ function saveInfo() {
                 sibling.style.display = "block";
                 sibling2.style.display = "block";
             }
+            saveData();
         });
 
         sibling2.addEventListener("click", function () {
             let parent = sibling2.parentElement;
             noteOutput.removeChild(parent);
+            saveData();
         });
 
     });
@@ -68,6 +70,18 @@ btn.addEventListener("click", function () {
 saveBtn.addEventListener("click", function () {
     if (textarea.value !== "") {
         saveInfo();
+        saveData();
     }
 });
+
+
+function saveData() {
+    localStorage.setItem("data", noteOutput.innerHTML);
+}
+
+function showData() {
+    noteOutput.innerHTML = localStorage.getItem("data");
+}
+
+showData();
 
